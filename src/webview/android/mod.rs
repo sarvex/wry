@@ -9,6 +9,7 @@ use jni::{
   sys::jobject,
   JNIEnv,
 };
+use url::Url;
 
 use once_cell::sync::Lazy;
 
@@ -30,7 +31,11 @@ impl InnerWebView {
 
   pub fn print(&self) {}
 
-  pub fn eval(&self, _js: &str) -> Result<()> {
+  pub fn url(&self) -> Url {
+    panic!("Unsupported in android");
+  }
+
+  pub fn eval(&self, js: &str) -> Result<()> {
     Ok(())
   }
 
