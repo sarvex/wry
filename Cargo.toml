@@ -48,7 +48,7 @@ http = "0.2.9"
 anyhow = "1.0"
 http-range = "0.1.5"
 dirs = "4.0.0"
-base64 = "0.13.1"
+base64 = "0.22.0"
 
 [target."cfg(any(target_os = \"linux\", target_os = \"dragonfly\", target_os = \"freebsd\", target_os = \"openbsd\", target_os = \"netbsd\"))".dependencies]
 javascriptcore-rs = { version = "0.17.0", features = [ "v2_28" ] }
@@ -94,4 +94,4 @@ crossbeam-channel = "0.5"
 kuchiki = "0.8"
 html5ever = "0.25"
 sha2 = "0.10"
-base64 = "0.13"
+base64 = "0.22"
